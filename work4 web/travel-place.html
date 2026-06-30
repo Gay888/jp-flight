@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>สถานที่ท่องเที่ยว — JP-FLIGHT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="page-travel">
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">JP-FLIGHT</a>
+      <nav>
+        <a href="travel-place.html" class="nav-link" style="color:var(--blue)">สถานที่ท่องเที่ยว</a>
+        <a href="flights.html" class="nav-link">เที่ยวบิน</a>
+        <a href="guides.html" class="nav-link">ไกด์แนะนำ</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="เมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="travel-place.html" class="nav-link">สถานที่ท่องเที่ยว</a>
+      <a href="flights.html" class="nav-link">เที่ยวบิน</a>
+      <a href="guides.html" class="nav-link">ไกด์แนะนำ</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO BANNER ===== -->
+  <div class="hero-section-tp">
+    <a href="index.html" class="tp-hero-back">← กลับหน้าแรก</a>
+    <h1 class="tp-hero-title">สถานที่ท่องเที่ยวชื่นดังของญี่ปุ่น</h1>
+    <p class="tp-hero-sub">เลือกจุดหมายปลายทางที่ใช่สำหรับคุณ แล้วดูข้อมูลเส้นทางและตั๋วเที่ยวบินได้ทันที</p>
+  </div>
+
+  <!-- ===== DESTINATIONS GRID ===== -->
+  <main class="tp-main">
+    <h2 class="tp-section-title">ทุกจุดหมายในญี่ปุ่น</h2>
+    <div class="tp-grid" id="travelGrid">
+      <!-- Cards rendered by script.js -->
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 JP-FLIGHT — Your Gateway to Japan</p>
+  </footer>
+
+  <!-- ===== MODAL (shared) ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

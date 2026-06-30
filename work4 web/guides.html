@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ไกด์แนะนำ — JP-FLIGHT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="page-guides">
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">JP-FLIGHT</a>
+      <nav>
+        <a href="travel-place.html" class="nav-link">สถานที่ท่องเที่ยว</a>
+        <a href="flights.html" class="nav-link">เที่ยวบิน</a>
+        <a href="guides.html" class="nav-link" style="color:var(--blue)">ไกด์แนะนำ</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="เมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="travel-place.html" class="nav-link">สถานที่ท่องเที่ยว</a>
+      <a href="flights.html" class="nav-link">เที่ยวบิน</a>
+      <a href="guides.html" class="nav-link">ไกด์แนะนำ</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <div class="gd-hero">
+    <a href="index.html" class="gd-back">← กลับหน้าแรก</a>
+    <h1 class="gd-hero-title">ไกด์แนะนำ</h1>
+    <p class="gd-hero-sub">ทีมไกด์มืออาชีพของเรา พร้อมพาคุณสำรวจทุกซอกมุมของญี่ปุ่น</p>
+  </div>
+
+  <!-- ===== GUIDES GRID ===== -->
+  <main class="gd-main">
+    <div class="guides-grid">
+
+      <div class="guide-card reveal" tabindex="0" onclick="openGuide('takeshi')">
+        <div class="guide-avatar">
+          <img src="https://api.dicebear.com/7.x/personas/svg?seed=takeshi&backgroundColor=b6e3f4" alt="คุณทาเคชิ" />
+        </div>
+        <h3 class="guide-name">คุณทาเคชิ ยามาโมโตะ</h3>
+        <p class="guide-spec">เชี่ยวชาญ: โตเกียว &amp; โยโกฮาม่า</p>
+        <p class="guide-short">ประสบการณ์ 15 ปี พูดไทย–อังกฤษ–ญี่ปุ่น เชี่ยวชาญวัฒนธรรมญี่ปุ่นดั้งเดิม</p>
+        <div class="guide-stars">★★★★★</div>
+        <span class="guide-more">ดูรายละเอียด →</span>
+      </div>
+
+      <div class="guide-card reveal" tabindex="0" onclick="openGuide('yuki')">
+        <div class="guide-avatar">
+          <img src="https://api.dicebear.com/7.x/personas/svg?seed=yuki&backgroundColor=ffdfbf" alt="คุณยูกิ" />
+        </div>
+        <h3 class="guide-name">คุณยูกิ ทานากะ</h3>
+        <p class="guide-spec">เชี่ยวชาญ: เกียวโต &amp; นารา</p>
+        <p class="guide-short">ไกด์สาวรุ่นใหม่ เชี่ยวชาญเส้นทางถ่ายรูป วัด และศาลเจ้า แนะนำจุดลับที่คนท้องถิ่นรู้</p>
+        <div class="guide-stars">★★★★★</div>
+        <span class="guide-more">ดูรายละเอียด →</span>
+      </div>
+
+      <div class="guide-card reveal" tabindex="0" onclick="openGuide('kenji')">
+        <div class="guide-avatar">
+          <img src="https://api.dicebear.com/7.x/personas/svg?seed=kenji&backgroundColor=c0aede" alt="คุณเคนจิ" />
+        </div>
+        <h3 class="guide-name">คุณเคนจิ ซาโต้</h3>
+        <p class="guide-spec">เชี่ยวชาญ: โอซาก้า &amp; โกเบ</p>
+        <p class="guide-short">ผู้เชี่ยวชาญด้านอาหารญี่ปุ่น พาชิมของอร่อย และแนะนำร้านลับระดับมิชลิน</p>
+        <div class="guide-stars">★★★★☆</div>
+        <span class="guide-more">ดูรายละเอียด →</span>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 JP-FLIGHT — Your Gateway to Japan</p>
+  </footer>
+
+  <!-- ===== GUIDE POPUP ===== -->
+  <div class="modal-overlay" id="guideOverlay">
+    <div class="modal modal-guide" id="guideModal">
+      <button class="modal-close" id="guideClose">✕</button>
+      <div class="modal-body" id="guideBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <!-- dummy modal overlay needed by shared script (won't show) -->
+  <div id="modalOverlay" style="display:none"><div id="modal"><button id="modalClose"></button><div id="modalBody"></div></div></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

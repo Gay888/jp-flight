@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP-FLIGHT — Your Gateway to Japan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">JP-FLIGHT</a>
+      <nav>
+        <a href="travel-place.html" class="nav-link">สถานที่ท่องเที่ยว</a>
+        <a href="flights.html" class="nav-link">เที่ยวบิน</a>
+        <a href="guides.html" class="nav-link">ไกด์แนะนำ</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="เมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="travel-place.html" class="nav-link">สถานที่ท่องเที่ยว</a>
+      <a href="flights.html" class="nav-link">เที่ยวบิน</a>
+      <a href="guides.html" class="nav-link">ไกด์แนะนำ</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">สำรวจญี่ปุ่นกับ JP-FLIGHT</h1>
+      <p class="hero-sub">ค้นพบสถานที่ท่องเที่ยวยอดนิยม จองตั๋วเครื่องบิน และเลือกไกด์มืออาชีพ</p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary btn-hero-main">ดูสถานที่ท่องเที่ยว →</a>
+      </div>
+    </div>
+    <div class="hero-scroll" id="heroScroll">
+      <span>เลื่อนลง</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINATIONS ===== -->
+  <section class="section" id="destinations">
+    <h2 class="section-title">สถานที่ท่องเที่ยวแนะนำ</h2>
+    <div class="destinations-grid">
+
+      <div class="dest-card" data-city="โตเกียว" data-desc="เมืองหลวงที่ผสมผสานความทันสมัยและวัฒนธรรมดั้งเดิมได้อย่างลงตัว" data-img="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80">
+        <div class="dest-img-wrap">
+          <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80" alt="โตเกียว" loading="lazy" />
+          <div class="dest-overlay">
+            <button class="dest-btn">สำรวจ →</button>
+          </div>
+        </div>
+        <p class="dest-name">โตเกียว (Tokyo)</p>
+      </div>
+
+      <div class="dest-card" data-city="โอซาก้า" data-desc="เมืองแห่งอาหารและความสนุกสนาน ศูนย์กลางการค้าทางตะวันตกของญี่ปุ่น" data-img="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&q=80">
+        <div class="dest-img-wrap">
+          <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&q=80" alt="โอซาก้า" loading="lazy" />
+          <div class="dest-overlay">
+            <button class="dest-btn">สำรวจ →</button>
+          </div>
+        </div>
+        <p class="dest-name">โอซาก้า (Osaka)</p>
+      </div>
+
+      <div class="dest-card" data-city="เกียวโต" data-desc="เมืองเก่าแก่ที่เต็มไปด้วยวัดวาอาราม ทะเลโทริอิ และสวนญี่ปุ่น" data-img="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=600&q=80">
+        <div class="dest-img-wrap">
+          <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=600&q=80" alt="เกียวโต" loading="lazy" />
+          <div class="dest-overlay">
+            <button class="dest-btn">สำรวจ →</button>
+          </div>
+        </div>
+        <p class="dest-name">เกียวโต (Kyoto)</p>
+      </div>
+
+      <div class="dest-card" data-city="ฮอกไกโด" data-desc="เกาะทางเหนือสุดที่มีทิวทัศน์ธรรมชาติสวยงาม ทุ่งลาเวนเดอร์และสกีรีสอร์ท" data-img="https://images.unsplash.com/photo-1601823984263-4df3ac4a2c50?w=600&q=80">
+        <div class="dest-img-wrap">
+          <img src="https://dappermagazine.mx/wp-content/uploads/2023/12/hokkaido2-800x500.jpg" alt="ฮอกไกโด" loading="lazy" />
+          <div class="dest-overlay">
+            <button class="dest-btn">สำรวจ →</button>
+          </div>
+        </div>
+        <p class="dest-name">ฮอกไกโด (Hokkaido)</p>
+      </div>
+
+      <div class="dest-card" data-city="นารา" data-desc="เมืองแห่งกวางเดินเล่นอิสระ บ้านเกิดของวัดโทไดจิขนาดยักษ์" data-img="https://images.unsplash.com/photo-1611918723693-bc81efb5d16f?w=600&q=80">
+        <div class="dest-img-wrap">
+          <img src="https://kyotocitytours.com/wp-content/uploads/2024/01/soutehrn-round-hall-kofukuji-nara-800.webp" alt="นารา" loading="lazy" />
+          <div class="dest-overlay">
+            <button class="dest-btn">สำรวจ →</button>
+          </div>
+        </div>
+        <p class="dest-name">นารา (Nara)</p>
+      </div>
+
+      <div class="dest-card" data-city="ฮิโรชิม่า" data-desc="เมืองแห่งสันติภาพ มีโทริอิอิตสึกุชิมาลอยน้ำอันเลื่องชื่อ" data-img="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=600&q=80">
+        <div class="dest-img-wrap">
+          <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=600&q=80" alt="ฮิโรชิม่า" loading="lazy" />
+          <div class="dest-overlay">
+            <button class="dest-btn">สำรวจ →</button>
+          </div>
+        </div>
+        <p class="dest-name">ฮิโรชิม่า (Hiroshima)</p>
+      </div>
+
+      <div class="dest-card" data-city="ฟุกุโอกะ" data-desc="เมืองประตูสู่ภาคตะวันตกของญี่ปุ่น โด่งดังด้านราเมนและตลาดอาหารทะเล" data-img="https://images.unsplash.com/photo-1607619662634-3ac55ec0e3c8?w=600&q=80">
+        <div class="dest-img-wrap">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.rH2-8SyJhkagDRemVARNXAHaFj?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="ฟุกุโอกะ" loading="lazy" />
+          <div class="dest-overlay">
+            <button class="dest-btn">สำรวจ →</button>
+          </div>
+        </div>
+        <p class="dest-name">ฟุกุโอกะ (Fukuoka)</p>
+      </div>
+
+      <div class="dest-card" data-city="โอกินาว่า" data-desc="หมู่เกาะเขตร้อนของญี่ปุ่น ทะเลสีฟ้าใสและวัฒนธรรมริวกิวที่เป็นเอกลักษณ์" data-img="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=600&q=80">
+        <div class="dest-img-wrap">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="โอกินาว่า" loading="lazy" />
+          <div class="dest-overlay">
+            <button class="dest-btn">สำรวจ →</button>
+          </div>
+        </div>
+        <p class="dest-name">โอกินาว่า (Okinawa)</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FLIGHTS ===== -->
+  <section class="section section-alt" id="flights">
+    <h2 class="section-title">เที่ยวบินแนะนำ</h2>
+    <div class="flights-grid">
+
+      <div class="flight-card" data-route="BKK→NRT" data-airline="Thai Airways TG676" data-time="07:30 → 15:45" data-duration="6 ชม." data-price="12,500">
+        <div class="flight-header">
+          <span class="flight-icon">✈</span>
+          <span class="flight-route">BKK → NRT (นาริตะ)</span>
+        </div>
+        <p class="flight-detail">Thai Airways TG676 | ออก 07:30 ถึง 15:45 | บินตรง 6 ชม.</p>
+        <p class="flight-price">เริ่มต้น ฿12,500</p>
+      </div>
+
+      <div class="flight-card" data-route="BKK→KIX" data-airline="AirAsia XJ610" data-time="23:55 → 07:15+1" data-duration="5.5 ชม." data-price="8,900">
+        <div class="flight-header">
+          <span class="flight-icon">✈</span>
+          <span class="flight-route">BKK → KIX (คันไซ)</span>
+        </div>
+        <p class="flight-detail">AirAsia XJ610 | ออก 23:55 ถึง 07:15+1 | บินตรง 5.5 ชม.</p>
+        <p class="flight-price">เริ่มต้น ฿8,900</p>
+      </div>
+
+      <div class="flight-card" data-route="BKK→HND" data-airline="ANA NH848" data-time="00:05 → 08:10" data-duration="6 ชม." data-price="14,200">
+        <div class="flight-header">
+          <span class="flight-icon">✈</span>
+          <span class="flight-route">BKK → HND (ฮาเนดะ)</span>
+        </div>
+        <p class="flight-detail">ANA NH848 | ออก 00:05 ถึง 08:10 | บินตรง 6 ชม.</p>
+        <p class="flight-price">เริ่มต้น ฿14,200</p>
+      </div>
+
+      <div class="flight-card" data-route="BKK→NGO" data-airline="VietJet VZ802" data-time="01:30 → 09:00" data-duration="5.5 ชม." data-price="7,500">
+        <div class="flight-header">
+          <span class="flight-icon">✈</span>
+          <span class="flight-route">BKK → NGO (นาโกย่า)</span>
+        </div>
+        <p class="flight-detail">VietJet VZ802 | ออก 01:30 ถึง 09:00 | บินตรง 5.5 ชม.</p>
+        <p class="flight-price">เริ่มต้น ฿7,500</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== GUIDES ===== -->
+  <section class="section" id="guides">
+    <h2 class="section-title">ไกด์แนะนำ</h2>
+    <div class="guides-grid">
+
+      <div class="guide-card" tabindex="0" onclick="openGuide('takeshi')">
+        <div class="guide-avatar">
+          <img src="https://api.dicebear.com/7.x/personas/svg?seed=takeshi&backgroundColor=b6e3f4" alt="คุณทาเคชิ" />
+        </div>
+        <h3 class="guide-name">คุณทาเคชิ ยามาโมโตะ</h3>
+        <p class="guide-spec">เชี่ยวชาญ: โตเกียว &amp; โยโกฮาม่า</p>
+        <div class="guide-stars">★★★★★</div>
+        <span class="guide-more">ดูรายละเอียด →</span>
+      </div>
+
+      <div class="guide-card" tabindex="0" onclick="openGuide('yuki')">
+        <div class="guide-avatar">
+          <img src="https://api.dicebear.com/7.x/personas/svg?seed=yuki&backgroundColor=ffdfbf" alt="คุณยูกิ" />
+        </div>
+        <h3 class="guide-name">คุณยูกิ ทานากะ</h3>
+        <p class="guide-spec">เชี่ยวชาญ: เกียวโต &amp; นารา</p>
+        <div class="guide-stars">★★★★★</div>
+        <span class="guide-more">ดูรายละเอียด →</span>
+      </div>
+
+      <div class="guide-card" tabindex="0" onclick="openGuide('kenji')">
+        <div class="guide-avatar">
+          <img src="https://api.dicebear.com/7.x/personas/svg?seed=kenji&backgroundColor=c0aede" alt="คุณเคนจิ" />
+        </div>
+        <h3 class="guide-name">คุณเคนจิ ซาโต้</h3>
+        <p class="guide-spec">เชี่ยวชาญ: โอซาก้า &amp; โกเบ</p>
+        <div class="guide-stars">★★★★☆</div>
+        <span class="guide-more">ดูรายละเอียด →</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 JP-FLIGHT — Your Gateway to Japan</p>
+  </footer>
+
+  <!-- ===== MODAL (shared) ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== GUIDE POPUP ===== -->
+  <div class="modal-overlay" id="guideOverlay">
+    <div class="modal modal-guide" id="guideModal">
+      <button class="modal-close" id="guideClose">✕</button>
+      <div class="modal-body" id="guideBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
