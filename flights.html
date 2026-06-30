@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เที่ยวบิน — JP-FLIGHT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="page-flights">
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">JP-FLIGHT</a>
+      <nav>
+        <a href="travel-place.html" class="nav-link">สถานที่ท่องเที่ยว</a>
+        <a href="flights.html" class="nav-link" style="color:var(--blue)">เที่ยวบิน</a>
+        <a href="guides.html" class="nav-link">ไกด์แนะนำ</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="เมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="travel-place.html" class="nav-link">สถานที่ท่องเที่ยว</a>
+      <a href="flights.html" class="nav-link">เที่ยวบิน</a>
+      <a href="guides.html" class="nav-link">ไกด์แนะนำ</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <div class="fl-hero">
+    <a href="index.html" class="fl-back">← กลับหน้าแรก</a>
+    <h1 class="fl-hero-title">เที่ยวบิน กรุงเทพฯ → ญี่ปุ่น <span class="fl-count">(8 เที่ยว)</span></h1>
+    <p class="fl-hero-sub">เลือกเที่ยวบินที่เหมาะกับคุณ ราคาเริ่มต้นจากกรุงเทพฯ สู่เมืองหลักของญี่ปุ่น</p>
+  </div>
+
+  <!-- ===== FLIGHTS GRID ===== -->
+  <main class="fl-main">
+    <div class="fl-grid" id="flightGrid">
+
+      <div class="fl-card" data-route="BKK→NRT" data-airline="Thai Airways TG676" data-time="07:30 → 15:45" data-duration="6 ชม." data-price="12,500">
+        <div class="fl-card-header">
+          <span class="fl-icon">✈</span>
+          <span class="fl-route">BKK → NRT <span class="fl-city">(นาริตะ)</span></span>
+        </div>
+        <p class="fl-detail">Thai Airways TG676 | ออก 07:30 ถึง 15:45 | บินตรง 6 ชม.</p>
+        <p class="fl-price">เริ่มต้น ฿12,500</p>
+        <button class="fl-btn" onclick="openFlightModal(this)">ดูรายละเอียด →</button>
+      </div>
+
+      <div class="fl-card" data-route="BKK→KIX" data-airline="AirAsia XJ610" data-time="23:55 → 07:15+1" data-duration="5.5 ชม." data-price="8,900">
+        <div class="fl-card-header">
+          <span class="fl-icon">✈</span>
+          <span class="fl-route">BKK → KIX <span class="fl-city">(คันไซ)</span></span>
+        </div>
+        <p class="fl-detail">AirAsia XJ610 | ออก 23:55 ถึง 07:15+1 | บินตรง 5.5 ชม.</p>
+        <p class="fl-price">เริ่มต้น ฿8,900</p>
+        <button class="fl-btn" onclick="openFlightModal(this)">ดูรายละเอียด →</button>
+      </div>
+
+      <div class="fl-card" data-route="BKK→HND" data-airline="ANA NH848" data-time="00:05 → 08:10" data-duration="6 ชม." data-price="14,200">
+        <div class="fl-card-header">
+          <span class="fl-icon">✈</span>
+          <span class="fl-route">BKK → HND <span class="fl-city">(ฮาเนดะ)</span></span>
+        </div>
+        <p class="fl-detail">ANA NH848 | ออก 00:05 ถึง 08:10 | บินตรง 6 ชม.</p>
+        <p class="fl-price">เริ่มต้น ฿14,200</p>
+        <button class="fl-btn" onclick="openFlightModal(this)">ดูรายละเอียด →</button>
+      </div>
+
+      <div class="fl-card" data-route="BKK→NGO" data-airline="VietJet VZ802" data-time="01:30 → 09:00" data-duration="5.5 ชม." data-price="7,500">
+        <div class="fl-card-header">
+          <span class="fl-icon">✈</span>
+          <span class="fl-route">BKK → NGO <span class="fl-city">(นาโกย่า)</span></span>
+        </div>
+        <p class="fl-detail">VietJet VZ802 | ออก 01:30 ถึง 09:00 | บินตรง 5.5 ชม.</p>
+        <p class="fl-price">เริ่มต้น ฿7,500</p>
+        <button class="fl-btn" onclick="openFlightModal(this)">ดูรายละเอียด →</button>
+      </div>
+
+      <div class="fl-card" data-route="BKK→CTS" data-airline="Thai Airways TG670" data-time="23:50 → 08:15+1" data-duration="6.5 ชม." data-price="15,800">
+        <div class="fl-card-header">
+          <span class="fl-icon">✈</span>
+          <span class="fl-route">BKK → CTS <span class="fl-city">(ซัปโปโร)</span></span>
+        </div>
+        <p class="fl-detail">Thai Airways TG670 | ออก 23:50 ถึง 08:15+1 | บินตรง 6.5 ชม.</p>
+        <p class="fl-price">เริ่มต้น ฿15,800</p>
+        <button class="fl-btn" onclick="openFlightModal(this)">ดูรายละเอียด →</button>
+      </div>
+
+      <div class="fl-card" data-route="BKK→FUK" data-airline="VietJet VZ808" data-time="00:45 → 08:00" data-duration="5 ชม." data-price="6,900">
+        <div class="fl-card-header">
+          <span class="fl-icon">✈</span>
+          <span class="fl-route">BKK → FUK <span class="fl-city">(ฟุกุโอกะ)</span></span>
+        </div>
+        <p class="fl-detail">VietJet VZ808 | ออก 00:45 ถึง 08:00 | บินตรง 5 ชม.</p>
+        <p class="fl-price">เริ่มต้น ฿6,900</p>
+        <button class="fl-btn" onclick="openFlightModal(this)">ดูรายละเอียด →</button>
+      </div>
+
+      <div class="fl-card" data-route="BKK→OKA" data-airline="Thai AirAsia FD238" data-time="10:00 → 14:30" data-duration="4.5 ชม." data-price="7,200">
+        <div class="fl-card-header">
+          <span class="fl-icon">✈</span>
+          <span class="fl-route">BKK → OKA <span class="fl-city">(โอกินาว่า)</span></span>
+        </div>
+        <p class="fl-detail">Thai AirAsia FD238 | ออก 10:00 ถึง 14:30 | บินตรง 4.5 ชม.</p>
+        <p class="fl-price">เริ่มต้น ฿7,200</p>
+        <button class="fl-btn" onclick="openFlightModal(this)">ดูรายละเอียด →</button>
+      </div>
+
+      <div class="fl-card" data-route="BKK→HIJ" data-airline="Japan Airlines JL831" data-time="09:00 → 16:40" data-duration="5.5 ชม." data-price="11,900">
+        <div class="fl-card-header">
+          <span class="fl-icon">✈</span>
+          <span class="fl-route">BKK → HIJ <span class="fl-city">(ฮิโรชิม่า)</span></span>
+        </div>
+        <p class="fl-detail">Japan Airlines JL831 | ออก 09:00 ถึง 16:40 | บินตรง 5.5 ชม.</p>
+        <p class="fl-price">เริ่มต้น ฿11,900</p>
+        <button class="fl-btn" onclick="openFlightModal(this)">ดูรายละเอียด →</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 JP-FLIGHT — Your Gateway to Japan</p>
+  </footer>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+  <script>
+    function openFlightModal(btn) {
+      const card    = btn.closest('.fl-card');
+      const route   = card.dataset.route;
+      const airline = card.dataset.airline;
+      const time    = card.dataset.time;
+      const dur     = card.dataset.duration;
+      const price   = card.dataset.price;
+      openModal(`
+        <div style="padding:36px 28px 28px;">
+          <h3 style="font-size:1.35rem;color:var(--navy);margin-bottom:18px;">✈ ${route}</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px;">
+            <div class="fl-modal-row"><span class="fl-modal-label">สายการบิน</span><span>${airline}</span></div>
+            <div class="fl-modal-row"><span class="fl-modal-label">เวลาออก–ถึง</span><span>${time}</span></div>
+            <div class="fl-modal-row"><span class="fl-modal-label">ระยะเวลา</span><span>${dur}</span></div>
+            <div class="fl-modal-row"><span class="fl-modal-label">ราคาเริ่มต้น</span><span style="color:var(--blue);font-weight:800;">฿${price}</span></div>
+          </div>
+        </div>
+      `);
+    }
+  </script>
+</body>
+</html>
